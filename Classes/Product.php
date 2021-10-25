@@ -4,8 +4,8 @@ require_once __DIR__ . '/../Traits/ProductTraits.php';
 class Product
 {
 	use ProductTraits;
-	private $name;
-	private $price;
+	public $name;
+	public $price;
 	public function __construct($_name, $_price, $_brand)
 	{
 		$this->name = $_name;

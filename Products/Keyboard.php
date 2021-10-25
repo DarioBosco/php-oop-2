@@ -1,9 +1,9 @@
 <?php
 class Keyboard extends Product
 {
-	private $languageLayout;
-	private $amountOfKeys;
-	private $connector;
+	public $languageLayout;
+	public $amountOfKeys;
+	public $connector;
 
 	public function __construct($_name, $_price, $_brand, $_languageLayout, $_amountOfKeys, $_connector)
 	{

@@ -43,7 +43,7 @@ echo '<hr>';
 echo 'Tento di impostare un valore non valido:' . '<br>';
 try {
 	$product2->setPrice('Nuovo prezzo: 79.99');
-} catch (\Exception $e) {
+} catch (Exception $e) {
 	echo 'Eccezione: ' . $e->getMessage();
 }
 echo '<hr>';
