@@ -12,8 +12,12 @@ trait ProductTraits
 		return $this->name;
 	}
 
+	//Imposto un'eccezione nel caso il prezzo non sia numerico.
 	function setPrice($price)
 	{
+		if (!is_numeric($price)) {
+			throw new Exception('It\'s not a number!');
+		}
 		$this->price = $price;
 	}
 

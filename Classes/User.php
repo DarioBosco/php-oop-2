@@ -1,18 +1,20 @@
 <?php
+require_once __DIR__ . '/Address.php';
 class User
 {
 	public $firstName;
 	public $lastName;
 	public $email;
 	public $phone;
-	//public $address;
+	public $address;
 
-	function __construct($_firstName, $_lastName, $_email, $_phone)
+	function __construct($_firstName, $_lastName, $_email, $_phone, $_address = null)
 	{
 		$this->firstName = $_firstName;
 		$this->lastName = $_lastName;
 		$this->email = $_email;
 		$this->phone = $_phone;
+		$this->address = $_address;
 	}
 
 	function setfirstName($firstName)
