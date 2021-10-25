@@ -1,6 +1,6 @@
 <?php
 
-/* trait ProductTraits
+trait ProductTraits
 {
 	function setName($name)
 	{
@@ -31,4 +31,4 @@
 	{
 		return $this->brand;
 	}
-} */
+}
