@@ -1,10 +1,10 @@
 <?php
 class Mouse extends Product
 {
-	private $brand;
-	private $dpi;
-	private $weight;
-	private $connector;
+	public $brand;
+	public $dpi;
+	public $weight;
+	public $connector;
 
 	public function __construct($_name, $_price, $_brand, $_dpi = null, $_weight = null, $_connector)
 	{

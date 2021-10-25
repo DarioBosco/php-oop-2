@@ -1,8 +1,8 @@
 <?php
 class Order
 {
-	private $products = array();
-	private $user;
+	public $products = array();
+	public $user;
 
 	function __construct($_user, ...$_products)
 	{

@@ -3,10 +3,6 @@
 require_once __DIR__ . '/Classes/Product.php';
 require_once __DIR__ . '/Classes/Order.php';
 require_once __DIR__ . '/Classes/User.php';
-require_once __DIR__ . '/Products/Mouse.php';
-require_once __DIR__ . '/Products/Keyboard.php';
-require_once __DIR__ . '/Traits/ProductTraits.php';
-
 //Istanzio due utenti
 
 echo 'test';
@@ -28,4 +24,3 @@ var_dump($product2);
 var_dump($product2);
 
 var_dump($order1);
-
