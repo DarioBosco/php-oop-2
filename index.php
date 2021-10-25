@@ -9,13 +9,15 @@ echo 'test';
 $utente1 = new User('Dario', 'Bosco', 'info@example.com', '+39 123 456 789');
 $utente2 = new User('Nome', 'Cognome', 'admin@example.com', '+39 987 654 321');
 
+var_dump($utente1);
+var_dump($utente2);
 //Istanzio tre prodotti
 $product1 = new Product('Product 1', '9.00');
 $product2 = new Keyboard('Blackwidow Chroma V3', 129.99, 'Razer', 'IT', 108, 'USB-C');
-$product3 = new Mouse('Pro X Superlight Wireless', 129.00, 'Logitech', 'US intl', 86, 'Wireless');
+$product3 = new Mouse('Pro X Superlight Wireless', 129.00, 'Logitech', 12000, 28, 'Wireless');
 
 //Istanzio un ordine con due prodotti
-$order1 = new Order($utente1, new Keyboard('G915', 120.99, 'Logitech', 'US intl', 86, 'Wireless'), new Keyboard('Blackwidow Chroma V2', 150.99, 'Razer', 'IT', 108, 'USB-C'));
+$order1 = new Order($utente1, $product1, $product2);
 
 var_dump($product1);
 var_dump($product2);
