@@ -8,7 +8,7 @@ class User
 	public $phone;
 	public $address;
 
-	function __construct($_firstName, $_lastName, $_email, $_phone, $_address = null)
+	function __construct($_firstName, $_lastName, $_email, $_phone, $_address = NULL)
 	{
 		$this->firstName = $_firstName;
 		$this->lastName = $_lastName;

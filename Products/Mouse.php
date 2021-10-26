@@ -5,7 +5,7 @@ class Mouse extends Product
 	public $weight;
 	public $connector;
 
-	public function __construct($_name, $_price, $_brand, $_dpi = null, $_weight = null, $_connector)
+	public function __construct($_name, $_price, $_brand, $_dpi = NULL, $_weight = NULL, $_connector)
 	{
 		parent::__construct($_name, $_price, $_brand);
 		$this->dpi = $_dpi;
